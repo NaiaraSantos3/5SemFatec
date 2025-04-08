@@ -47,15 +47,7 @@ public class PersonDAO {
 
     private boolean isValidEmail(String email) {
         if (email == null) return false;
-        String[] parts = email.split("@");
-        if (parts.length != 2) return false;
-
-        String local = parts[0];
-        String domainPart = parts[1];
-
-        String[] domainParts = domainPart.split("\\.");
-        if (domainParts.length != 2) return false;
-
-        return !local.isEmpty() && !domainParts[0].isEmpty() && !domainParts[1].isEmpty();
+        return email.matches("^[A-Za-z0-9+_.-]+@(.+)$");
     }
+    
 }

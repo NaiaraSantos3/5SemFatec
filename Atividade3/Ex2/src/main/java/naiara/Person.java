@@ -8,7 +8,7 @@ public class Person {
     private int age;
     private List<Email> emails;
 
-    public Person() {}
+  public Person() {}
 
     public Person(int id, String name, int age, List<Email> emails) {
         this.id = id;
@@ -34,18 +34,18 @@ public class Person {
     }
 
     public int getAge() {
-        return age;
+       return age;
     }
 
     public void setAge(int age) {
-        this.age = age;
-    }
+       this.age = age;
+   }
 
     public List<Email> getEmails() {
         return emails;
-    }
+   }
 
     public void setEmails(List<Email> emails) {
         this.emails = emails;
-    }
+  }
 }
